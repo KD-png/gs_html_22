@@ -1,0 +1,392 @@
+/* ここから下に記載していく */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    width: 30%;
+    height: auto;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.header__nav {
+    display: flex;
+    color: black;
+}
+
+.header__nav li {
+    margin-left: 40px;
+} 
+
+/* mainvisual */
+.mainvisual {
+    height: 400px;
+    /* 背景画像を使う場合は background: url("xxx") */
+    background: url("..//img/taihi1.jpg");
+    /* 下の３つは背景画像を使うときに基本必要なもの */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* セカイを救うミミズを知ろう */
+.mainvisual__title {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* ミミズ養成学校「ミミズアカデミーEARTH」 */
+.mainvisual__subtitle {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.about {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 60px 0px 30px;
+    color: #ffd61a;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.about__subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.about__text {
+    text-align: center;
+    margin: 40px;
+}
+
+.about__text1{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+/* 画像４つ */
+.imgBox {
+    /* flexは横並びにする */
+    /* この段階で画像４つが横に並ぶ */
+    /* 画面の端が足りていないのはimgタグに対しておまじないが足りていないため */
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* imgBoxの中にあるpタグにだけ攻撃する書き方 */
+.imgBox p {
+/* 画面の橋から橋を100%という考え方のため画像が4っつの場合は100/4=25% */
+/* これをpタグのwidth幅にする */
+    width: 25%;
+}
+
+/* imgBoxの中にあるpタグの中のimgに攻撃 */
+.imgBox p img {
+    /* 画像を利用する際はwidth: 100%を利用するテクニック */
+    width: 100%;
+}
+
+/* Courseのところ */
+.Course {
+    margin: 50px 0;
+}
+
+.course__title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;    
+}
+
+.course__text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+    /* 行間を調整するおまじない */
+}
+
+/* course */
+.imga{
+    display: flex;
+    background-color: #fafafa;
+}
+
+.nouen{
+    width: 50%;
+    height: auto;
+}
+
+.course-sentense{
+    width: 50%;
+    height: auto;   
+}
+
+.course-title{
+    margin: 120px 0px 40px 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course-content{
+    margin: 0px 0px 120px 50px;
+}
+
+.imgb{
+    display: flex;
+    background-color: #fafafa;
+}
+
+.kogi{
+   width: 50%;
+   height: auto;
+}
+
+.nanmon{
+    display: block;
+    text-align: right;
+}
+
+.kogi-sentense{
+    width: 50%;
+    height: auto;
+    
+}
+
+.kogi-title{
+    margin-top: 120px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 145px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 445px;
+}
+
+.kogi-content{
+    margin-right: 50px;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.imgc{
+    display: flex;
+}
+    
+.viking{
+    width: 50%;
+    height: auto;
+}
+
+.viking-sentense{
+    width: 50%;
+    height: auto;
+}
+.viking-title{
+    margin: 120px 50px 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.viking-content{
+    margin: 0px 50px 120px;
+}
+
+/* news */
+.news-title{
+    font-size: 24px;
+    text-align: center;
+    padding: 60px 0px 30px;
+    color: #ffd61a;
+    font-weight: bold;
+}
+
+.news-text{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+ul.newsList {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.newsList__item{
+    padding: 15px;
+}
+
+.news-botan{
+    background-color: #ffd61a;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.botan-text{
+    font-size: 18px;
+    padding-top: 21px;
+}
+
+.botan-link{
+    color: white;
+    text-decoration:underline;
+    }
+
+/* access */
+.access{
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.access-title{
+    font-size: 24px;
+    padding: 60px 0px 30px;
+}
+
+.access-subtitle{
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.googlemap{
+    width: 50%;
+    height: auto;
+}
+
+.access-table{
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+}
+
+.access-table td{
+    padding-bottom: 30px;
+    padding-right: 15px;
+}
+
+/* contact */
+.contact{
+    text-align: center;
+}
+
+.access-englishtitle{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.access-japanesetitle{
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.contact-sentents{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.contact-sentents2{
+    font-size: 16px;
+    padding-bottom: 70px;  
+}
+
+.table2{
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.formnametop{
+    border-top: solid 2px  #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+}
+
+.form-name1{
+    width: 224px;
+    border-right:solid 1px #bfbfbf;
+    text-align: left;
+    padding: 8px;
+}
+
+.form-name2{
+    width: 328px;
+    padding: 8px;
+}
+
+.formname{
+    border-bottom: solid 1px #bfbfbf;
+}
+
+.selecttag{
+    width: 430px;
+}
+
+.check_lb {
+    display:block;
+    text-align: left;
+}
+
+.formname2{
+    height: 150px;
+}
+
+textarea{
+    vertical-align:top;
+}
+
+.news-botan1{
+    background-color: #ffd61a;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.botan-text1{
+    color: white;
+    font-size: 18px;
+    padding-top: 21px;
+    text-decoration:underline;
+}
+
+.footer{
+    background-color: #707070;
+    color:white;
+    margin-top: 140px;
+    padding:30px 0px;
+    text-align: center;
+}
